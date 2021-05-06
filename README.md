@@ -8,7 +8,7 @@ Para ter um controle de versionamento do seu projeto, pois com diversos profissi
 
 O Git possui diversas caracteriscias como o suporte consistente para desenvolvimentos não lineares, onde suporta rápidas criações de branches e merges; O desenvolvimento distribuído que proporciona a cada desenvolvedor uma cópia local completa de todo o histórico de desenvolvimento; A compatibilidade com protocolos/sistemas existentes; A autenticação criptográfica do histórico; Basicamente um modelo em ferramentas, que proporciona um programa escrito em C para os scripts de manipulação; 
 As estratégias de merge conectáveis; O lixo se acumula se não for limpo, que proporciona a eliminação de objetos indesejáveis, sem valor, no banco de dados; O Git armazena cada novo objeto criado como um arquivo separado, entre outras funções.
-=======
+
 ### 5. Qual a importância da utilização do controle de versionamento no desenvolvimento de um software?
 
 As ferramentas de controle de versionamento são muito úteis durante o processo de desenvolvimento de software, elas ajudam tanto no controle das mudanças do código, quanto na organização do código ao trabalhar em equipe. Ao utilizar esse tipo de ferramenta, podemos ter um histórico completo de todas as alterações realizadas no código, com informações como: arquivos alterados, data da alteração e até mesmo quem alterou o código, nos casos de projetos com mais de um colaborador. Além disso, caso necessário, pode-se "voltar" para uma versão anterior do projeto, dividir o código em diferentes ramificações, além da ramificação principal, que receberá as alterações finalizadas.
