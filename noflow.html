@@ -1,0 +1,1322 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <title>Trabalho Git - Página Inicial</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Trabalho GIT e Versionamento&nbsp;&nbsp;&nbsp;&nbsp;| </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Página Inicial</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="noflow.html">Comandos sem Flow</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Comandos com Flow</a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <div class="accordion">
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                    git add
+                </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Adiciona o conteúdo dos arquivos ao índice.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    git am
+                </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Aplica uma série de patches vindos de uma caixa de e-mails.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    git archive
+                </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Cria um histórico dos arquivos a partir de uma determinada árvore.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    git bisect
+                </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Utilize a procura binária para localizar o commit que introduziu um bug.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    git branch
+                </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Lista, cria ou exclui as branchs.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                    git bundle
+                </button>
+            </h2>
+            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Mova os objetos e as refs através do histórico.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading7">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                    git checkout
+                </button>
+            </h2>
+            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Mova os ramos ou restaura os arquivos da árvores de trabalho.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading8">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                    git cherry pick
+                </button>
+            </h2>
+            <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Aplica as mudanças introduzidas por alguns commits já existentes.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading9">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                    git citool
+                </button>
+            </h2>
+            <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Uma alternativa gráfica ao git commit.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading10">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                    git clean
+                </button>
+            </h2>
+            <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Remove os arquivos da árvore de trabalho sem monitoramento.
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading11">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                    git clone
+                </button>
+            </h2>
+            <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Clona um repositório em um novo diretório.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading12">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                    git commit
+                </button>
+            </h2>
+            <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Grava as alterações para o repositório.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading13">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                    git describe
+                </button>
+            </h2>
+            <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Dá a um objeto um nome em um formato legível para humanos com base em um "ref" disponível.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading14">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                    git diff
+                </button>
+            </h2>
+            <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Exiba as alterações entre os commits, o commit, árvore de trabalho, etc.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading15">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                    git diff
+                </button>
+            </h2>
+            <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Exiba as alterações entre os commits, o commit, árvore de trabalho, etc.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading16">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                    git fetch
+                </button>
+            </h2>
+            <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="heading16"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Faz o download dos objetos e dos refs vindo de outro repositório.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading17">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                    git format patch
+                </button>
+            </h2>
+            <div id="collapse17" class="accordion-collapse collapse" aria-labelledby="heading17"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Prepara os patches para serem enviados por e-mail.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading18">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                    git gc
+                </button>
+            </h2>
+            <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="heading18"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Exclui os arquivos desnecessários e otimiza o repositório local.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading19">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                    git grep
+                </button>
+            </h2>
+            <div id="collapse19" class="accordion-collapse collapse" aria-labelledby="heading19"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Imprima as linhas que coincidam com um padrão.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading20">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                    git gui
+                </button>
+            </h2>
+            <div id="collapse20" class="accordion-collapse collapse" aria-labelledby="heading20"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Uma interface gráfica portátil para o Git.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading21">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+                    git gui
+                </button>
+            </h2>
+            <div id="collapse21" class="accordion-collapse collapse" aria-labelledby="heading21"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Uma interface gráfica portátil para o Git.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading22">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                    git init
+                </button>
+            </h2>
+            <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="heading22"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Cria um repositório vazio para o Git ou reinicializa um repositório já existente.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading23">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                    git log
+                </button>
+            </h2>
+            <div id="collapse23" class="accordion-collapse collapse" aria-labelledby="heading23"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Exibe os registros logs de um commit.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading24">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse24" aria-expanded="false" aria-controls="collapse24">
+                    git merge
+                </button>
+            </h2>
+            <div id="collapse24" class="accordion-collapse collapse" aria-labelledby="heading24"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Une dois ou mais históricos de desenvolvimento juntos.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading25">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse25" aria-expanded="false" aria-controls="collapse25">
+                    git mv
+                </button>
+            </h2>
+            <div id="collapse25" class="accordion-collapse collapse" aria-labelledby="heading25"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Move ou renomeia um arquivo, um diretório ou um link simbólico.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading26">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse26" aria-expanded="false" aria-controls="collapse26">
+                    git notes
+                </button>
+            </h2>
+            <div id="collapse26" class="accordion-collapse collapse" aria-labelledby="heading26"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Adiciona ou inspeciona as anotações dos objetos.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading27">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse27" aria-expanded="false" aria-controls="collapse27">
+                    git pull
+                </button>
+            </h2>
+            <div id="collapse27" class="accordion-collapse collapse" aria-labelledby="heading27"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Capture de e o integre com um outro repositório ou em um outro ramo local.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading28">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse28" aria-expanded="false" aria-controls="collapse28">
+                    git push
+                </button>
+            </h2>
+            <div id="collapse28" class="accordion-collapse collapse" aria-labelledby="heading28"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Atualiza os refs remotos através da associação dos objetos.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading29">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse29" aria-expanded="false" aria-controls="collapse29">
+                    git range diff
+                </button>
+            </h2>
+            <div id="collapse29" class="accordion-collapse collapse" aria-labelledby="heading29"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Compara os dois intervalos de um commit (duas versões de um ramo por exemplo).
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading30">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse30" aria-expanded="false" aria-controls="collapse30">
+                    git rebase
+                </button>
+            </h2>
+            <div id="collapse30" class="accordion-collapse collapse" aria-labelledby="heading30"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Reaplica os commits no topo do outro cume da base.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading31">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse31" aria-expanded="false" aria-controls="collapse31">
+                    git reset
+                </button>
+            </h2>
+            <div id="collapse31" class="accordion-collapse collapse" aria-labelledby="heading31"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Redefine o HEAD atual para o para a condição determinada.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading32">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse32" aria-expanded="false" aria-controls="collapse32">
+                    git revert
+                </button>
+            </h2>
+            <div id="collapse32" class="accordion-collapse collapse" aria-labelledby="heading32"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Reverte alguns commits já existentes.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading33">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse33" aria-expanded="false" aria-controls="collapse33">
+                    git revert
+                </button>
+            </h2>
+            <div id="collapse33" class="accordion-collapse collapse" aria-labelledby="heading33"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Reverte alguns commits já existentes.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading34">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse34" aria-expanded="false" aria-controls="collapse34">
+                    git rm
+                </button>
+            </h2>
+            <div id="collapse34" class="accordion-collapse collapse" aria-labelledby="heading34"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Remove os arquivos da árvore de trabalho e do índice.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading35">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse35" aria-expanded="false" aria-controls="collapse35">
+                    git shortlog
+                </button>
+            </h2>
+            <div id="collapse35" class="accordion-collapse collapse" aria-labelledby="heading35"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Faça um resumo da saída do git log.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading36">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse36" aria-expanded="false" aria-controls="collapse36">
+                    git sparse checkout
+                </button>
+            </h2>
+            <div id="collapse36" class="accordion-collapse collapse" aria-labelledby="heading36"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Alter e inicialize a averiguação esparsa.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading37">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse37" aria-expanded="false" aria-controls="collapse37">
+                    git stash
+                </button>
+            </h2>
+            <div id="collapse37" class="accordion-collapse collapse" aria-labelledby="heading37"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Armazene as alterações em um diretório fora do diretório de trabalho.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading38">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse38" aria-expanded="false" aria-controls="collapse38">
+                    git status
+                </button>
+            </h2>
+            <div id="collapse38" class="accordion-collapse collapse" aria-labelledby="heading38"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Armazene as alterações em um diretório fora do diretório de trabalho.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading39">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse39" aria-expanded="false" aria-controls="collapse39">
+                    git status
+                </button>
+            </h2>
+            <div id="collapse39" class="accordion-collapse collapse" aria-labelledby="heading39"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Armazene as alterações em um diretório fora do diretório de trabalho.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading40">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse40" aria-expanded="false" aria-controls="collapse40">
+                    git status
+                </button>
+            </h2>
+            <div id="collapse40" class="accordion-collapse collapse" aria-labelledby="heading40"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Armazene as alterações em um diretório fora do diretório de trabalho.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading41">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse41" aria-expanded="false" aria-controls="collapse41">
+                    git submodule
+                </button>
+            </h2>
+            <div id="collapse41" class="accordion-collapse collapse" aria-labelledby="heading41"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Inicializa, atualiza ou inspeciona submódulos.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading42">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse42" aria-expanded="false" aria-controls="collapse42">
+                    git switch
+                </button>
+            </h2>
+            <div id="collapse42" class="accordion-collapse collapse" aria-labelledby="heading42"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Alterna entre os ramos.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading43">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse43" aria-expanded="false" aria-controls="collapse43">
+                    git tag
+                </button>
+            </h2>
+            <div id="collapse43" class="accordion-collapse collapse" aria-labelledby="heading43"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Cria, lista, exclui ou verifica uma tag do objeto com assinatura GPG.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading44">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse44" aria-expanded="false" aria-controls="collapse44">
+                    git worktree
+                </button>
+            </h2>
+            <div id="collapse44" class="accordion-collapse collapse" aria-labelledby="heading44"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Manipula as diversas árvores de trabalho.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading45">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse45" aria-expanded="false" aria-controls="collapse45">
+                    gitk
+                </button>
+            </h2>
+            <div id="collapse45" class="accordion-collapse collapse" aria-labelledby="heading45"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    O navegador do repositório Git.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="accordion-item">
+                <button class="accordion-button " >
+                    Comandos Auxiliares
+                </button>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading46">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse46" aria-expanded="false" aria-controls="collapse46">
+                    git config
+                </button>
+            </h2>
+            <div id="collapse46" class="accordion-collapse collapse" aria-labelledby="heading46"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Obtém e define os repositórios ou as opções globais.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading47">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse47" aria-expanded="false" aria-controls="collapse47">
+                    git fast export
+                </button>
+            </h2>
+            <div id="collapse47" class="accordion-collapse collapse" aria-labelledby="heading47"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Exportador de dados do Git.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading48">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse48" aria-expanded="false" aria-controls="collapse48">
+                    git fast import
+                </button>
+            </h2>
+            <div id="collapse48" class="accordion-collapse collapse" aria-labelledby="heading48"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Estrutura para os importadores de dados rápidos do Git.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading49">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse49" aria-expanded="false" aria-controls="collapse49">
+                    git filter branch
+                </button>
+            </h2>
+            <div id="collapse49" class="accordion-collapse collapse" aria-labelledby="heading49"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Reescreve os ramos.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading50">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse50" aria-expanded="false" aria-controls="collapse50">
+                    git filter branch
+                </button>
+            </h2>
+            <div id="collapse50" class="accordion-collapse collapse" aria-labelledby="heading50"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Reescreve os ramos.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading51">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse51" aria-expanded="false" aria-controls="collapse51">
+                    git mergetool
+                </button>
+            </h2>
+            <div id="collapse51" class="accordion-collapse collapse" aria-labelledby="heading51"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Executa as ferramentas de resolução problemas para resolver os conflitos de mesclagem.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading52">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse52" aria-expanded="false" aria-controls="collapse52">
+                    git pack refs
+                </button>
+            </h2>
+            <div id="collapse52" class="accordion-collapse collapse" aria-labelledby="heading52"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Empacota os cabeçalhos e as tags para um acesso eficiente ao repositório.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading53">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse53" aria-expanded="false" aria-controls="collapse53">
+                    git prune
+                </button>
+            </h2>
+            <div id="collapse53" class="accordion-collapse collapse" aria-labelledby="heading53"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Corta todos os objetos fora de alcance do banco de dados de objetos.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading54">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse54" aria-expanded="false" aria-controls="collapse54">
+                    git reflog
+                </button>
+            </h2>
+            <div id="collapse54" class="accordion-collapse collapse" aria-labelledby="heading54"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Gerencia as informações do reflog.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading55">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse55" aria-expanded="false" aria-controls="collapse55">
+                    git remote
+                </button>
+            </h2>
+            <div id="collapse55" class="accordion-collapse collapse" aria-labelledby="heading55"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Gerencia o conjunto de repositórios monitorados.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading56">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse56" aria-expanded="false" aria-controls="collapse56">
+                    git repack
+                </button>
+            </h2>
+            <div id="collapse56" class="accordion-collapse collapse" aria-labelledby="heading56"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Empacota os objetos não empacotados em um repositório.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading57">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse57" aria-expanded="false" aria-controls="collapse57">
+                    git replace
+                </button>
+            </h2>
+            <div id="collapse57" class="accordion-collapse collapse" aria-labelledby="heading57"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Cria, lista e exclui os refs para a reposição dos objetos.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-button " >
+                Interrogadores
+            </button>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading58">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse58" aria-expanded="false" aria-controls="collapse58">
+                    git annotate
+                </button>
+            </h2>
+            <div id="collapse58" class="accordion-collapse collapse" aria-labelledby="heading58"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Anota as linhas com as informações do commit.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading59">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse59" aria-expanded="false" aria-controls="collapse59">
+                    git blame
+                </button>
+            </h2>
+            <div id="collapse59" class="accordion-collapse collapse" aria-labelledby="heading59"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Exibe quais foram as últimas modificações feitas em cada linha de um arquivo separados pela versão da revisão e do autor da modificação.
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading60">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse60" aria-expanded="false" aria-controls="collapse60">
+                    git bugreport
+                </button>
+            </h2>
+            <div id="collapse60" class="accordion-collapse collapse" aria-labelledby="heading60"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Colete informações para que o usuário envie um relatório de erro.    
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading61">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse61" aria-expanded="false" aria-controls="collapse61">
+                    git count objects
+                </button>
+            </h2>
+            <div id="collapse61" class="accordion-collapse collapse" aria-labelledby="heading61"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Conta a quantidade dos objetos que não foram empacotados e seu consumo no disco.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading62">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse62" aria-expanded="false" aria-controls="collapse62">
+                    git difftool
+                </button>
+            </h2>
+            <div id="collapse62" class="accordion-collapse collapse" aria-labelledby="heading62"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Exibe as mudanças utilizando ferramentas diff tradicionais.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading63">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse63" aria-expanded="false" aria-controls="collapse63">
+                    git difftool
+                </button>
+            </h2>
+            <div id="collapse63" class="accordion-collapse collapse" aria-labelledby="heading63"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Exibe as mudanças utilizando ferramentas diff tradicionais.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading64">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse64" aria-expanded="false" aria-controls="collapse64">
+                    git fsck
+                </button>
+            </h2>
+            <div id="collapse64" class="accordion-collapse collapse" aria-labelledby="heading64"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Verifica a conectividade e validade dos objetos em um banco de dados.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading65">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse65" aria-expanded="false" aria-controls="collapse65">
+                    git help
+                </button>
+            </h2>
+            <div id="collapse65" class="accordion-collapse collapse" aria-labelledby="heading65"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Exiba a informação de ajuda sobre o Git.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading66">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse66" aria-expanded="false" aria-controls="collapse66">
+                    git instaweb
+                </button>
+            </h2>
+            <div id="collapse66" class="accordion-collapse collapse" aria-labelledby="heading66"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Navegue instantaneamente no seu repositório de trabalho com o gitweb.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading67">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse67" aria-expanded="false" aria-controls="collapse67">
+                    git merge tree
+                </button>
+            </h2>
+            <div id="collapse67" class="accordion-collapse collapse" aria-labelledby="heading67"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Exiba as três maneiras de mesclagem sem mexer no índice.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading68">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse68" aria-expanded="false" aria-controls="collapse68">
+                    git rerere
+                </button>
+            </h2>
+            <div id="collapse68" class="accordion-collapse collapse" aria-labelledby="heading68"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Reutilize uma resolução gravada das mesclagens conflitantes.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading69">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse69" aria-expanded="false" aria-controls="collapse69">
+                    git show branch
+                </button>
+            </h2>
+            <div id="collapse69" class="accordion-collapse collapse" aria-labelledby="heading69"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Exiba os ramos e seus respectivos commits.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading70">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse70" aria-expanded="false" aria-controls="collapse70">
+                    git verify commit
+                </button>
+            </h2>
+            <div id="collapse70" class="accordion-collapse collapse" aria-labelledby="heading70"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Verifique a assinatura GPG dos commits.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading71">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse71" aria-expanded="false" aria-controls="collapse71">
+                    git verify tag
+                </button>
+            </h2>
+            <div id="collapse71" class="accordion-collapse collapse" aria-labelledby="heading71"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Verifique a assinatura GPG das tags.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading72">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse72" aria-expanded="false" aria-controls="collapse72">
+                    git whatchanged
+                </button>
+            </h2>
+            <div id="collapse72" class="accordion-collapse collapse" aria-labelledby="heading72"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Exiba os registros logs com a diferença entre a introdução de cada commit.
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading73">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse73" aria-expanded="false" aria-controls="collapse73">
+                    gitweb
+                </button>
+            </h2>
+            <div id="collapse73" class="accordion-collapse collapse" aria-labelledby="heading73"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Interface web do Git (frontend web para os repositórios Git).
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-button " >
+                Interação 
+            </button>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading74">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse74" aria-expanded="false" aria-controls="collapse74">
+                    git archimport
+                </button>
+            </h2>
+            <div id="collapse74" class="accordion-collapse collapse" aria-labelledby="heading74"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Importa um repositório GNU Arch no Git.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading75">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse75" aria-expanded="false" aria-controls="collapse75">
+                    git cvsexportcommit
+                </button>
+            </h2>
+            <div id="collapse75" class="accordion-collapse collapse" aria-labelledby="heading75"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Exporta um único commit para uma averiguação do CVS.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading76">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse76" aria-expanded="false" aria-controls="collapse76">
+                    git cvsimport
+                </button>
+            </h2>
+            <div id="collapse76" class="accordion-collapse collapse" aria-labelledby="heading76"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Recupera os seus dados vindos de outros SCM que as pessoas adoram odiar.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading77">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse77" aria-expanded="false" aria-controls="collapse77">
+                    git cvsserver
+                </button>
+            </h2>
+            <div id="collapse77" class="accordion-collapse collapse" aria-labelledby="heading77"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Um emulador de um servidor CVS para o Git.
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading78">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse78" aria-expanded="false" aria-controls="collapse78">
+                    git imap send
+                </button>
+            </h2>
+            <div id="collapse78" class="accordion-collapse collapse" aria-labelledby="heading78"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Envia uma coleção de patches da entrada padrão para um diretório IMAP.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading79">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse79" aria-expanded="false" aria-controls="collapse79">
+                    git p4
+                </button>
+            </h2>
+            <div id="collapse79" class="accordion-collapse collapse" aria-labelledby="heading79"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Importa de e submete aos repositório Perforce.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading80">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse80" aria-expanded="false" aria-controls="collapse80">
+                   git quiltimport
+                </button>
+            </h2>
+            <div id="collapse80" class="accordion-collapse collapse" aria-labelledby="heading80"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Aplica um conjunto de patches no ramo atual.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading81">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse81" aria-expanded="false" aria-controls="collapse81">
+                    git request pull
+                </button>
+            </h2>
+            <div id="collapse81" class="accordion-collapse collapse" aria-labelledby="heading81"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Gera um resumo com as modificações pendentes.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading82">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse82" aria-expanded="false" aria-controls="collapse82">
+                    git send email
+                </button>
+            </h2>
+            <div id="collapse82" class="accordion-collapse collapse" aria-labelledby="heading82"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Envia uma coleção de patches como sendo e-mails.
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="heading83">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse83" aria-expanded="false" aria-controls="collapse83">
+                   git svn
+                </button>
+            </h2>
+            <div id="collapse83" class="accordion-collapse collapse" aria-labelledby="heading83"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Operação bidirecional entre um repositório do Subversion e do Git.
+                </div>
+            </div>
+        </div>
+        
+    
+
+
+    </div>
+
+
+    <footer class="footer mt-auto py-3 bg-light" style="position: fixed; bottom: 0; width: 100%;">
+        <div class="container position-relative">
+            <span class="text-muted position-absolute top-50 start-50 translate-middle"
+                style="width: 100%; text-align: center;">Criado por: Guilherme Moretto de
+                Araujo | João Gabriel Gil de Paula | Gabriel Corradini Siqueira</span>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
